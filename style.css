@@ -98,7 +98,8 @@ body, html {
 
 #spotify-player {
   position: absolute;
-  left: 0%;
+  left: 2%;
+  top: 2%;
   width: 25%;
   height: 30%;
   opacity: 0;
@@ -294,6 +295,8 @@ body, html {
   transform: translateY(-100px);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
+  margin-top: 5%;
+  margin-bottom: 5%;
 
   scroll-behavior: smooth;
   scrollbar-width: thin;
