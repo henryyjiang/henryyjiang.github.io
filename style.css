@@ -169,8 +169,6 @@ body, html {
   pointer-events: auto;
 }
 
-
-
 #skills-btn {
   top: calc(120 / 1080 * 100%);
   left: calc(1250 / 1920 * 100%);
@@ -284,14 +282,14 @@ body, html {
 
 .window-content {
   position: relative;
-  background: rgba(20, 20, 20, 0.85);
+  background: rgba(30, 117, 218, 0.247);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   width: 90%;
   height: 90%;
   color: white;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(3, 34, 102, 0.4);
   overflow-y: auto;
   transform: translateY(-100px);
   opacity: 0;
@@ -299,7 +297,7 @@ body, html {
 
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(20, 20, 20, 0.6);
+  scrollbar-color: rgba(18, 137, 184, 0.3) rgba(20, 20, 20, 0.6);
 }
 
 #overlay-window.active .window-content {
@@ -333,12 +331,13 @@ body, html {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .skills-grid span {
-  background: rgba(255,255,255,0.1);
+  background: rgba(13, 4, 136, 0.1);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   text-align: center;
   font-weight: 500;
   transition: background 0.2s;
