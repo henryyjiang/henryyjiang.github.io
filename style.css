@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.scene-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.scene-wrapper {
+  min-width: 101vw;
+  min-height: 101vh;
+  transform-origin: center center;
+  transition: transform 0.1s ease-out;
+}
+
+.scene-wrapper {
+  position: fixed;
+  top: 10;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+#room-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#room-anim video {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.2s ease;
+}
+
+
+#room-anim img {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.2s ease;
+}
+
+#room-anim iframe {
+  z-index: 1;
+}
+
+.glow {
+  filter: drop-shadow(0 0 10px #00c3ff)
+          drop-shadow(0 0 20px #0084ff)
+          drop-shadow(0 0 30px #0051ff);
+}
+
+#visualizer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+
+#spotify-player {
+  position: absolute;
+  left: 0%;
+  width: 25%;
+  height: 30%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#spotify-player.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.beanbag {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.desk {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.speaker {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.skateboard {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.linkedin {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.resume {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.github {
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hidden-btn {
+  background: transparent;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.2s ease;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+
+
+#skills-btn {
+  top: calc(120 / 1080 * 100%);
+  left: calc(1250 / 1920 * 100%);
+  width: calc(450 / 1920 * 100%);
+  height: calc(200 / 1080 * 100%);
+  position: absolute;
+}
+
+#projects-btn {
+  top: calc(320 / 1080 * 100%);
+  left: calc(150 / 1920 * 100%);
+  width: calc(500 / 1920 * 100%);
+  height: calc(450 / 1080 * 100%);
+  position: absolute;
+}
+
+#anim-btn {
+  top: calc(600 / 1080 * 100%);
+  left: calc(1400 / 1920 * 100%);
+  width: calc(400 / 1920 * 100%);
+  height: calc(400 / 1080 * 100%);
+  position: absolute;
+}
+
+#linkedin-btn {
+  top: calc(250 / 1080 * 100%);
+  left: calc(1100 / 1920 * 100%);
+  width: calc(200 / 1920 * 100%);
+  height: calc(200 / 1080 * 100%);
+  position: absolute;
+}
+
+#resume-btn {
+  top: calc(400 / 1080 * 100%);
+  left: calc(1300 / 1920 * 100%);
+  width: calc(200 / 1920 * 100%);
+  height: calc(200 / 1080 * 100%);
+  position: absolute;
+}
+
+#github-btn {
+  top: calc(100 / 1080 * 100%);
+  left: calc(900 / 1920 * 100%);
+  width: calc(200 / 1920 * 100%);
+  height: calc(200 / 1080 * 100%);
+  position: absolute;
+}
+
+#songs-btn {
+  top: calc(250 / 1080 * 100%);
+  left: calc(550 / 1920 * 100%);
+  width: calc(300 / 1920 * 100%);
+  height: calc(400 / 1080 * 100%);
+  position: absolute;
+}

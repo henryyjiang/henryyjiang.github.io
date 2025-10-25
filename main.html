@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<div class="scene-container">
+  <div class="scene-wrapper">
+    <div id="room-anim">
+      <img src="assets/room.png" class="room" alt="Room" /> 
+      <div id="visualizer"></div>
+      <img src="assets/beanbag.png" class="beanbag" alt="Beanbag" />
+      <img src="assets/bookshelf.png" class="bookshelf" alt="Bookshelf" />
+      <img src="assets/speaker.png" class="speaker" alt="Speaker" />
+      <img src="assets/desk.png" class="desk" alt="Desk" />
+      <img src="assets/skateboard.png" class="skateboard" alt="Skateboard" />
+      <img src="assets/linkedin.png" class="linkedin" alt="Linkedin" />
+      <img src="assets/resume.png" class="resume" alt="Resume" />
+      <img src="assets/github.png" class="github" alt="Github" />
+
+      <video src="assets/room.mp4" autoplay loop muted></video>
+
+      
+      <div class="hidden-btn" id="skills-btn"></div>
+      <div class="hidden-btn" id="projects-btn"></div>
+      <div class="hidden-btn" id="about-btn"></div>
+      <div class="hidden-btn" id="anim-btn"></div>
+      <div class="hidden-btn" id="songs-btn"></div>
+
+      <div class="hidden-btn" id="linkedin-btn"></div>
+      <div class="hidden-btn" id="github-btn"></div>
+      <div class="hidden-btn" id="resume-btn"></div>
+
+      <iframe 
+        id="spotify-player"
+        src="https://open.spotify.com/embed/playlist/5It0iunZv7J73m6hp6lmig"
+        width="600"
+        height="360"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media">
+      </iframe>
+
+      <video id="glitch-intro" autoplay muted playsinline style="
+        transition: opacity 1s ease;
+        opacity: 100%;
+      ">
+        <source src="assets/glitch.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div id="overlay-window" class="hidden">
+    <div id="window" class="window-content">
+      <button class="close-button" id="close-btn">✕</button>
+
+      <div id="skills-section">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+          <div id="page-body">
+          <span>Java</span>
+          <span>Python</span>
+          <span>C/C++/C#</span>
+          <span>HTML/JS/CSS</span>
+          <span>Tensorflow/Pytorch</span>
+          <span>Android Studio</span>
+          <span>OpenCV</span>
+          <span>Splunk</span>
+          <span>Docker</span>
+          <span>Firebase</span>
+          <span>R</span>
+          <span>Linux</span>
+          <span>Node.js</span>
+          <span>JUnit</span>
+          <span>JIRA</span>
+        </div>
+      </div>
+
+      <div id="projects-section">
+        <h1>Projects</h1>
+        <div class="project">
+          <div class="project-title">Full-Stack Travel Planner Android App</div>
+          <div class="project-desc">
+            Built a full-stack Android travel planning app using Java and Firebase for authentication and data storage. Implemented itinerary tracking, visualization, and user forums with a focus on SOLID principles and clean UI.
+            <br><a href="https://github.com/henryyjiang/travelplannerapp" target="_blank">GitHub Link</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Stock Market Bubble/Crash Forecast AI</div>
+          <div class="project-desc">
+            Built TIDE and Random Forest models predicting financial bubbles with 76% and 91% accuracy respectively. Scraped unique sector ETF and headline sentiment data to train the models, capable of forecasting weekly VIX and ETF movements.
+            <br><a href="https://github.com/henryyjiang/bubble_predictor" target="_blank">GitHub Link</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Darwin: Agentic Evolving GPT</div>
+          <div class="project-desc">
+            Developed a proof-of-concept for a Darwin-Gödel model using genetic algorithms applied to GPT agents that iteratively modify and improve their own training code. Features a live chat window enabling model requests for new datasets and library upgrades.
+            <br><a href="https://github.com/henryyjiang/DARWIN" target="_blank">GitHub Link</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Automated Intersection Management for Self-Driving Vehicles</div>
+          <div class="project-desc">
+            Designed an AI-based intersection management system improving simulated traffic flow by 50% using Pygame, Q-learning, and a Double Q-table approach. Built a physical Raspberry Pi car with YOLOv3-mini and OpenCV for lane detection and motor control.
+            <br><a href="https://github.com/henryyjiang/automatedintersectionmanagement" target="_blank">GitHub Link</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Meal Max – AI-Powered Satiety Nutrition Tracker </div>
+          <div class="project-desc">
+            Trained a TensorFlow neural network to predict satiety scores with 75% accuracy and integrated OCR-based nutrition label scanning. Developed a Tkinter-based real-time meal tracker with a self-updating database.
+            <br><a href="https://github.com/henryyjiang/satietytracker" target="_blank">GitHub Link</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">MatStructPredict Particle Swarm with Local Optimization </div>
+          <div class="project-desc">
+            Filler
+            <br><a href="https://github.com/henryyjiang/MSP_PSO" target="_blank">GitHub Link</a>
+          </div>
+        </div>
+
+      <div id="about-section">
+        <h1>About Me</h1>
+        <div id="page-body">ts tuff!</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
