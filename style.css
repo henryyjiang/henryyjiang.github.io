@@ -300,6 +300,13 @@ body, html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: rgba(18, 137, 184, 0.3) rgba(20, 20, 20, 0.6);
+
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0.2));
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0.2));
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
 }
 
 
@@ -311,6 +318,11 @@ body, html {
 .window-content.closing {
   transform: translateY(100px);
   opacity: 0;
+}
+
+#overlay-window h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .close-button {
@@ -328,19 +340,46 @@ body, html {
   opacity: 0.7;
 }
 
+/* .skills-grid {
+  display: grid;
+  gap: 8rem; 
+  justify-items: center; 
+  align-items: start; 
+  margin: 4rem auto;
+  width: 90%;
+}
+
+.skills-grid span {
+  font-size: 2rem;
+  background: rgba(13, 4, 136, 0.1);
+  border-radius: 20px;
+  padding: 4rem 4rem;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.2s;
+
+  box-sizing: border-box; 
+}
+
+.skills-grid span:hover {
+  background: rgba(255, 255, 255, 0.25);
+} */
+
 .skills-grid {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit);
+  align-items: center;
+  gap: 10rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .skills-grid span {
+  font-size: 3rem;
   background: rgba(13, 4, 136, 0.1);
   border-radius: 8px;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 5rem;
   text-align: center;
   font-weight: 500;
   transition: background 0.2s;
@@ -356,20 +395,27 @@ body, html {
   padding-bottom: 1rem;
 }
 
-.project h2 {
+.project h1 {
   margin-bottom: 0.5rem;
 }
 
 .project-title {
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+}
+
+.project-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .project-desc {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
+  width: 70%;
+  color: #e5e5e5;
   line-height: 1.5;
   color: rgba(230,230,230,0.9);
 }
@@ -381,6 +427,22 @@ body, html {
 
 .project-desc a:hover {
   text-decoration: underline;
+}
+
+.project-image {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  object-fit: contain;
+  opacity: 0.9;
 }
 
 section {
