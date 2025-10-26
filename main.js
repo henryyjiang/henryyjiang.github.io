@@ -1,5 +1,5 @@
 // visualizer
-const frameCount = 24;
+const frameCount = 118;
 let currentFrame = 1;
 const container = document.getElementById("visualizer");
 
