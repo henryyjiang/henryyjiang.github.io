@@ -283,19 +283,22 @@ body, html {
 .window-content {
   position: relative;
   background: rgba(30, 117, 218, 0.247);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
   width: 90%;
   height: 90%;
   color: white;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(3, 34, 102, 0.4);
   overflow-y: auto;
   transform: translateY(-100px);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
   margin-top: 5%;
   margin-bottom: 5%;
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-image: url("assets/blinkie.gif") 30 round; 
+  border-radius: 12px;
+
 
   scroll-behavior: smooth;
   scrollbar-width: thin;
@@ -308,7 +311,6 @@ body, html {
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }
-
 
 #overlay-window.active .window-content {
   transform: translateY(0);
