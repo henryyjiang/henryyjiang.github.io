@@ -146,3 +146,17 @@ const content = document.getElementById('window');
     }
 });
 
+
+//overlay bg
+const overlay = document.getElementById('overlay-window');
+const images = [
+  "assets/screenie1.png",
+  "assets/screenie2.png",
+  "assets/screenie3.png"
+];
+let current = 0;
+
+setInterval(() => {
+  current = (current + 1) % images.length;
+  overlay.style.setProperty('--overlay-bg', `url('${images[current]}')`);
+}, 3000);

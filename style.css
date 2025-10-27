@@ -257,6 +257,8 @@ body, html {
   font-size: 24px;
   line-height: 1.6;
   color: #e5e5e5;
+
+  --overlay-bg: url('assets/screenie1.png');
 }
 
 #overlay-window.active {
@@ -264,17 +266,24 @@ body, html {
   pointer-events: all;
 }
 
-
-/* background image
 #overlay-window::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('assets/meowl.jpg') center/cover no-repeat;
-  opacity: 0.2;
-  z-index: -1;
-} */
+  background: var(--overlay-bg) center/cover no-repeat;
+  opacity: 0.6;
+  animation: bounce-bg 2s ease-in-out infinite;
+}
 
+
+@keyframes bounce-bg {
+  0%, 100% {
+    background-position: 0 50%; /* starting position */
+  }
+  50% {
+    background-position: 0 55%; /* move down 10px at midpoint */
+  }
+}
 
 .hidden {
   display: none;
