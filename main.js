@@ -1,12 +1,12 @@
 // visualizer
-const frameCount = 118;
+const frameCount = 173;
 let currentFrame = 1;
 const container = document.getElementById("visualizer");
 
 const frames = [];
 for (let i = 1; i <= frameCount; i++) {
     const img = new Image();
-    img.src = `assets/visualizer/Timeline 1_${String(i).padStart(4, "0")}.png`;
+    img.src = `assets/video/Timeline 1_${String(i).padStart(4, "0")}.png`;
     frames.push(img);
 }
 
